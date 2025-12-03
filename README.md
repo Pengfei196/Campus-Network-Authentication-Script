@@ -1,5 +1,4 @@
 # Campus-Network-Authentication-Script   太原理工大校园网自动登陆Python脚本
----
 
 ## 一、校园网登陆脚本
 [Pengfei196/Campus-Network-Authentication-Script: 太原理工大校园网自动登陆Python脚本](https://github.com/Pengfei196/Campus-Network-Authentication-Script)
