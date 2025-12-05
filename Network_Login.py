@@ -121,8 +121,7 @@ class Login:
     def is_connected(self):
         try:
             test=requests.get("https://www.baidu.com",timeout=5)
-            status=re.search(r'STATUS OK',test.text)
-            if status:
+            if test.status_code==200:
                 return True
             else:
                 return False
@@ -150,4 +149,5 @@ if __name__=="__main__":
     # url = "https://drcom.tyut.edu.cn:802/eportal/portal/login?callback=130546474740&login_method=46&user_account=4547424e&user_password=0606464430d5959&wlan_user_ip=464746594059464644&wlan_user_ipv6=&wlan_user_mac=474747474747474747474747&wlan_ac_ip=&wlan_ac_name=&mac_type=47&authex_enable=&jsVersion=435944&terminal_type=46&lang=1219&user_agent=3a180d1e1b1b1658425947575f201e191318000457392357464759474c57201e1941434c570f41435e573607071b122012153c1e0358424440594441575f3c3f233a3b5b571b1e1c12573012141c185e57341f05181a12584643455947594759475724161116051e584244405944415732131058464345594759475947&enable_r3=47&encrypt=1&v=1921&lang=en"
     login=Login()
     login.login(url)
+
 
